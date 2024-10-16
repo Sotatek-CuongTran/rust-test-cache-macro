@@ -1,0 +1,23 @@
+[package]
+name = "cached_macro"
+version = "0.1.0"
+edition = "2021"
+authors = ["An Devloper <an.devloper@example.com>"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+bytes = "1.0"
+redis = { version = "0.27.4", features = ["aio", "tokio-comp"] }
+mini-redis = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+quote = "1.0"
+syn = { version = "1.0", features = ["full"] }
+proc-macro2 = "1.0"
+bb8 = "0.7"
+bb8-redis = "0.7"
+web3 = "0.18.0"
+
+[lib]
+proc-macro = true
